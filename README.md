@@ -4,9 +4,11 @@ This is a simple script I wrote to duplicate some rows for spreadsheets. I just 
 
 ## Usage
 
+`ruby duplicate_rows.rb ARG[0] ARG[1]`
+`ruby duplicate_rows.rb File1 File2`
 `ruby duplicate_rows.rb YOUR_SPREADSHEET.xlsx NEW_SPREADSHEET_FILE.xlsx`
 
-The program takes 2 arguments. The first argument is the file path of the initial speadsheet you want to duplicate.  The second argument is the file path of tje resulting file that contains the duplicated data.
+The program takes 2 arguments. The first argument is the file path of the initial speadsheet you want to duplicate.  The second argument is the file path of the resulting file that contains the duplicated data.
 
 `ruby duplicate_rows.rb -l 1000 YOUR_SPREADSHEET.xlsx NEW_SPREADSHEET_FILE.xlsx`
 
@@ -14,5 +16,5 @@ Say you have a giant file and you only want to duplicate 1000 rows.  Set the LIM
 
 You can also use the flag format `--limit`
 
-`ruby duplicate_rows.rb -limit 1000 YOUR_SPREADSHEET.xlsx NEW_SPREADSHEET_FILE.xlsx`
+`ruby duplicate_rows.rb --limit 1000 YOUR_SPREADSHEET.xlsx NEW_SPREADSHEET_FILE.xlsx`
 
